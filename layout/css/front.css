@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(248 248 248);
+    font-size: 16px;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Kaisei Tokumin', serif;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+    margin: 30px 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #67616c;
+}
+.input-container{
+    position: relative;
+}
+.form-pos{
+    position: relative;
+}
+.form-pos .asterisk{
+    position: absolute;
+    right: -3px;
+    top: 7px;
+    font-size: 20px;
+    color: #ee3636;
+}
+.input-container .asterisk{
+    position: absolute;
+    right: -12px;
+    top: 7px;
+    font-size: 20px;
+    color: #ee3636;
+}
+
+@media only screen and (max-width: 576px){
+    .asterisk{
+        position: absolute;
+        right: -11px;
+        top: 8px;    
+        font-size: 20px;
+        color: #ee3636;
+    }
+
+}
+
+/* Bootstrap Edit */
+
+.nav-link{
+    color:rgb(0, 0, 0)
+}
+.nav-link:focus, .nav-link:hover{
+    color: rgb(0, 0, 0);
+}
+.navbar-brand{
+    font-size: 1em;
+}
+
+
+/* end Bootstrap */
+
+/* Start Header */
+
+.upper-bar{
+    padding: 10px;
+    background-color: #fff;
+}
+.upper-bar .hello-center{
+    line-height: 39px;
+}
+.upper-bar .nav-btn{
+    margin: 0 5px;
+}
+.upper-bar .nav-btn a{
+    color: #FFF;
+}
+.upper-bar img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+/* End Header */
+
+/* Start Login */
+
+.login-page form{
+    margin: auto;
+    max-width: 400px;
+}
+.login-page form input{
+    margin-bottom: 10px;
+}
+.eye-relative{
+    position: relative;
+}
+.eye-relative .show-pass{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+@media only screen and (max-width: 576px){
+    .eye-relative .show-pass{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+
+}
+.login-page .selected{
+    color: #d43a3a;
+}
+.login-page h1{
+    font-size: 50px;
+    margin: 30px 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #c2bec5;
+}
+.login-page [data-class="login"].selected{
+    color: rgb(13 110 253);
+}
+.login-page [data-class="signup"].selected{
+    color: #198754;
+}
+.login-page h1 span{
+    cursor: pointer;
+}
+.login-page .signup{
+    display: none;
+}
+
+/* End Login */
+
+/* Start Categories */
+
+.item-box{
+    margin-bottom: 10px;
+}
+.dis-cat .price{
+    background-color: #157347;
+    padding: 4px 10px;
+    color: #FFF;
+}
+.cat-edit .item-box .date{
+    text-align: right;
+    font-size: 13px;
+}
+/* End Categories */
+/* Start Profile */
+
+.block{
+    margin: 20px 0 0;
+}
+.information ul{
+    margin: 0;
+    padding: 0;
+}
+.information ul li{
+    padding: 10px;
+}
+.information ul li:nth-child(odd){
+    background-color: #2e2a31;
+}
+.information ul li span{
+    width: 150px;
+    display: inline-block;
+}
+.information .btn{
+    margin-top: 10px;
+}
+.my-Ads .item-box .date{
+    text-align: right;
+    font-size: 13px;
+}
+.my-comments .profile-comment{
+    padding: 5px;
+}
+.my-comments .profile-comment:nth-child(odd){
+    background-color: #2c2335;
+}
+.tags-items a{
+    display: inline-block;
+    padding: 2px 10px;
+    background-color: #cddee6;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 5px;
+}
+/* End Profile */
+
+/* new ad */
+.bg-dark .price{
+    background-color: #2f3d4b;
+    padding: 4px 10px;
+}
+/* end new ad */
+
+/* start show item */
+.item-info h2{
+    padding: 10px;
+}
+.item-info p{
+    padding: 10px;
+}
+.item-info ul li{
+    padding: 10px;
+}
+.item-info ul li:nth-child(odd){
+    background-color: #cddee6;
+}
+.item-info ul li span{
+    width: 150px;
+    display: inline-block;
+}
+.add-comment h3{
+    margin: 0 0 10px;
+}
+.add-comment textarea{
+    display: block;
+    width: 500px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.comment-box{
+    margin-bottom: 20px;
+}
+.comment-box img{
+    margin-bottom: 10px;
+}
+.comment-box .lead{
+    background-color: #d5d0e8;
+    position: relative;
+    padding: 10px;
+    margin-top: 65px;
+}
+.comment-box .lead::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #d5d0e8 transparent transparent;
+    position: absolute;
+    left: -28px;
+    top: 10px;
+}
+
+
+/* end show item */

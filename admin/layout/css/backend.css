@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(248 248 248);
+    font-size: 16px;
+    font-family: 'Glory', sans-serif;
+    font-family: 'Kaisei Tokumin', serif;
+}
+a{
+    text-decoration: none;
+}
+.form-pos{
+    position: relative;
+}
+.asterisk{
+    position: absolute;
+    right: -5px;
+    top: 13px;
+    font-size: 20px;
+    color: #ee3636;
+}
+
+.row .show-pass{
+    position: absolute;
+    right: 25px;
+    top: 13px;
+}
+
+@media only screen and (max-width: 576px){
+    .asterisk{
+        position: absolute;
+        right: 0px;
+        top: 61px;
+        font-size: 20px;
+        color: #ee3636;
+    }
+    .show-pass{
+        position: absolute;
+        right: 25px;
+        top: 54px;
+    }
+    .row .show-pass{
+        position: absolute;
+        right: 25px;
+        top: 60px;
+    }
+
+}
+
+/* login form */
+.login{
+    margin: 100px auto;
+    max-width: 400px;
+}
+.login input{
+    margin-bottom: 10px;
+}
+.login h3{
+    color: rgb(192 185 185);
+}
+.eye-relative{
+    position: relative;
+}
+.eye-relative .show-pass{
+    position: absolute;
+    right: 21px;
+    top: 96px;
+}
+
+/* end login form */
+
+/* Bootstrap Edit */
+
+.nav-item .nav-link{
+    color:#fff
+}
+.nav-item .nav-link:focus, .nav-link:hover{
+    color: #fff;
+}
+.navbar-brand{
+    font-size: 1em;
+}
+
+
+/* end Bootstrap */
+
+/* Start Dashboard */
+
+.home-stats .stat{
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-stats .stat i{
+    font-size: 90px;
+}
+.home-stats .st-members{
+    background-color: #74b9ff;
+}
+.home-stats .st-pending{
+    background-color: #00cec9;
+}
+.home-stats .st-items{
+    background-color: #a29bfe;
+}
+.home-stats .st-comments{
+    background-color: #ff7675;
+}
+.home-stats .stat span a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.last .toggle-info {
+    color: rgb(184, 169, 169);
+    cursor: pointer;
+}
+.last .toggle-info:hover{
+    color: #444;
+}
+
+.home-stats .stat span{
+    display: block;
+    font-size: 60px;
+}
+.list-users{
+    margin-bottom: 0;
+}
+.list-users li:nth-child(odd){
+    background-color: #EEE;
+}
+.list-users li{
+    padding: 9px;
+    overflow: hidden;
+}
+.list-users .btn-success,
+.list-users .btn-info{
+    padding: 2px 8px;
+}
+.list-users .btn-info{
+    color: #fff;
+    margin-right: 5px;
+}
+
+.last .comment-box{
+    margin: 5px 10px 0;
+}
+.last .comment-box .member-m,
+.last .comment-box .member-c{
+    display: inline-block;
+}
+
+.last .comment-box .member-m{
+    margin-bottom: 10px;
+}
+.last .comment-box .member-c{
+    background-color:#f4f4f4;
+    padding: 10px;
+    position: relative;
+}
+.last .comment-box .member-c::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -24px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-color: transparent #f4f4f4 transparent transparent;
+    border-width: 15px;
+}
+@media only screen and (max-width: 768px){
+    .last .comment-box .member-c::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 97px;
+        top: -25px;
+        width: 0;
+        height: 0;
+        border: solid;
+        border-color: transparent transparent #f4f4f4 transparent;
+        border-width: 15px;
+    }
+}
+
+/* End Dashboard */
+
+/* Member */
+
+h1{
+    font-size: 50px;
+    margin: 30px 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #67616c;
+}
+.main-table td{
+    background-color: #FFF;
+    vertical-align: middle !important;
+    max-width: 200px;
+}
+
+.main-table tr:first-child td{
+    background-color: #333;
+    color: #fff;
+}
+
+.main-table .btn{
+    margin: 7px 2px;
+}
+.add-btn{
+    margin: 0px 0px 15px 0;
+}
+
+.main-table .btn-info {
+    color: #fff;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.main-table .btn-info i{
+    color: #FFF;
+}
+.main-table .approve{
+    margin-left: 6px;
+}
+.manage-members img{
+    max-width: 50px;
+}
+
+@media only screen and (max-width: 992px){
+    .main-table .btn {
+        margin: 7px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+/* end member */
+
+/* Start Category */
+.border-dark .card-body{
+    padding: 0;
+}
+.categories .cat .flex-wrap,
+.categories .cat p
+,.categories .cat h3{
+    margin: 10px;
+}
+.categories .cat p{
+    color: #707070;
+}
+.categories .cat h3{
+    color: #493c3c;
+}
+.categories hr{
+    margin: 0;
+}
+.ordering a{
+    color: #555758;
+    text-decoration: none;
+}
+.ordering .active{
+    color: #ee3636;
+    font-weight: bold;
+}
+.categories .cat:last-of-type ~hr{
+    display: none;
+}
+.categories .cat {
+    position: relative;
+    overflow: hidden;
+}
+.categories .cat:hover{
+    background-color: #EEE;
+}
+.categories .cat:hover .hidden-buttons{
+    right: 10px;
+    top: 15px;
+}
+.categories .cat .hidden-buttons{
+    position: absolute;
+    transition:all .3s ease-in-out;
+    right: -170px;
+    top: 15px;
+}
+
+.categories .cat span{
+    margin-bottom: 6px;
+}
+.categories .cat .visibility,
+.categories .cat .com-allow,
+.categories .cat .ads-allow{
+    padding: 4px 6px;
+    color: #FFF;
+    margin-right: 6px;
+    border-radius: 6px;
+}
+.categories .cat .hidden,
+.categories .cat .com-dis,
+.categories .cat .ads-dis{
+    padding: 4px 6px;
+    color: #FFF;
+    margin-right: 6px;
+    border-radius: 6px;
+}
+.categories .cat .visibility{
+    background-color: #10ac84;
+}
+.categories .cat .hidden{
+    background-color: #ee5253;
+}
+.categories .cat .com-allow{
+    background-color: #48dbfb;
+}
+.categories .cat .com-dis{
+    background-color: #222f3e;
+}
+.categories .cat .ads-allow{
+    background-color: #699e42;
+}
+.categories .cat .ads-dis{
+    background-color: #b2bec3;
+}
+
+.categories .cats-head{
+    margin: 10px;
+    color: #c191e8;
+}
+/* End Category */
+
+/* Start Item */
+
+.align-box{
+    margin-top: 6px;
+}
+.tr-nowrap{
+    white-space: nowrap;
+}
+/* End Item */
